@@ -1,10 +1,15 @@
-# Database Schema – Airbnb Clone
+# Sample Data Seed – Airbnb Clone
 
-This script (`schema.sql`) defines the database schema for an Airbnb-like application. It includes:
+This script (`seed.sql`) inserts sample data into the Airbnb-like database system.
 
-- Table creation for all entities (users, properties, bookings, payments, reviews, messages)
-- Primary and foreign keys
-- Constraints such as NOT NULL, UNIQUE, CHECK
-- Indexes on frequently queried fields
+### Included Data:
+- 3 Users (guest, host, admin)
+- 2 Properties listed by host
+- 2 Bookings by the guest
+- 1 Payment linked to a booking
+- 1 Review written by the guest for a property
+- 2 Messages exchanged between guest and host
 
-The schema is designed to ensure data integrity, scalability, and optimal performance.
+All data is designed to reflect real-world scenarios and maintain referential integrity.
+
+Run this script **after** creating the database schema using `schema.sql`.
