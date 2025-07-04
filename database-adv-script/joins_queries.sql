@@ -8,9 +8,10 @@ SELECT
 FROM bookings b
 INNER JOIN users u ON b.user_id = u.user_id;
 
-SELECT properties.name , reviews.rating
+SELECT properties.name, reviews.rating
 FROM properties
-LEFT JOIN reviews ON reviews.property_id = properties.property_id;
+LEFT JOIN reviews ON reviews.property_id = properties.property_id
+ORDER BY properties.name ASC;
 
 SELECT bookings.booking_id,
   users.first_name, users.last_name,
