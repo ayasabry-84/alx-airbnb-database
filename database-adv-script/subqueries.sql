@@ -4,7 +4,7 @@ WHERE (
 		SELECT AVG(reviews.rating )
 		FROM reviews
 		WHERE reviews.property_id = properties.property_id
-	) > 4;
+	) > 4.0;
     
 SELECT users.first_name , 
 	(
